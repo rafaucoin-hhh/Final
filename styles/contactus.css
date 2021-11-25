@@ -1,0 +1,351 @@
+@import url("https://use.typekit.net/dyy4rof.css");
+
+.container{
+    display: flex;
+    margin-top: 130px;
+    height: fit-content;
+    width: 90%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 30vh 0 0 10vw;
+}
+.Contact h5{
+    font-family: muli;
+    color: #14ACB7;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 3rem;
+    margin-bottom: 6vh;
+}
+.Contact p{
+    color: #212121;
+    width:100%;
+    font-family: muli;
+    font-size: 1.4rem;
+}
+.form{
+    background-color: white;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 46px;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    height: fit-content;
+    width: 45%;
+    border-radius: 40px;
+    margin: 10vh 10vw 5vh 10vw;
+}
+.np{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 40vh;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 20vh;
+    margin-left: 1.5vw;
+    margin-top: 5vh;
+}
+.name label{
+    color: black;
+    font-family: muli;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.name input{
+    border: 2px solid;
+    height: 6vh;
+    border-radius: 4px;
+    border-color: #14ACB7;
+    color: black;
+    width: 95%;
+}
+.prenom{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 20vh;
+    margin-left: 1.5vw;
+    margin-bottom: 0;
+}
+.prenom label{
+    color: black;
+    font-family: muli;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+
+}
+.prenom input{
+    border: 2px solid;
+    height: 6vh;
+    border-radius: 4px;
+    border-color: #14ACB7;
+    color: black;
+    width: 95%;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-left: 1.5vw;
+}
+.email label{
+    color: black;
+    font-family: muli;
+    font-size: 01.3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.email input{
+     border: 2px solid;
+    height: 6vh;
+    border-radius: 4px;
+    border-color: #14ACB7;
+    color: black;
+    width: 95%;
+}
+.fonction{
+    display: flex;
+    align-items: center;
+    font-family: muli;
+    height: 50%;
+    width: 90%;
+    margin-top: 6vh;
+    margin-left: 1.5vw;
+    margin-bottom: 10px;
+}
+.form h5{
+    margin-left: 1.5vw;
+
+    margin-top: 7vh;
+    color: black;
+    font-family: muli;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    height: 2vh;
+}
+.left{
+    /* margin-left: -6.5vw; */
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+}
+.etud {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* margin: 5vh 0 0 -0vw ; */
+}
+#prof{
+    margin-top: 5vh;
+}
+.prof{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 3vw;
+}
+.prof input{
+    margin-top: 5vh;
+    height: 2.3vh;
+}
+#pro{
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+
+}
+.right{
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+}
+.employe{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.autre{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 3vw;
+}
+#autre{
+    margin-top: 5vh;
+}
+#aut{
+    margin-top: 0vh;
+}
+.right input{
+    margin-top: 5vh;
+    height: 2.3vh;
+}
+::placeholder{
+    font-size: 1rem;
+    padding-top: 1px;
+    padding-left: 10px;
+    opacity: 0.5;
+    z-index: ;
+}
+img{
+    pointer-events: none;
+}
+.msg{
+    margin-top: 0vh;
+    height: 200px;
+    width: 95.4%;
+    margin-left: 1.5vw;
+}
+input[type="text"]
+{
+    font-size:24px;
+    padding-left: 7px;
+}
+input[type="email"]
+{
+    font-size:24px;
+    padding-left: 7px;
+}
+.msg h5{
+    padding-bottom:20px;
+    font-family: muli;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0;
+}
+.msg textarea{
+    width: 90%;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #14ACB7;
+    height: 200px;
+    resize: none;
+}
+textarea:hover{
+    border-color: rgb(91, 91, 185);
+
+}
+input:hover{
+    border-color: rgb(91, 91, 185);
+}
+/* input:focus{
+    outline: #14ACB7;
+    border-width: 1.5px;
+    border: 2px solid;
+    height: 6vh;
+    border-radius: 4px;
+    border-color: #14ACB7;
+    color: black;
+    width: 95%;
+} */
+#submit{
+    background-color: #14ACB7;
+    display: block;
+    border-style: none;
+    border-radius: 5px;
+    height: 7vh;
+    width: 8vw;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 10vh;
+    margin-left: 11.5vw;
+    margin-bottom: 5vh;
+    margin: 10vh 0 5vh 11.5;
+}
+.submit:hover{
+    cursor: pointer;
+    top: 79px ;
+}
+textarea::placeholder{
+    font-size: 20px;
+}
+textarea{
+    font-size: 20px;
+    padding-left: 7px;
+    padding-top: 3px;
+}
+textarea:focus{
+    outline: #14ACB7;
+    border-width: 1.5px;
+}
+@media (max-width:900px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10vh;
+        border-radius: 0%;
+        height: fit-content;
+        box-shadow: none;
+      }
+      .Contact{
+          width: 100%;
+          margin: 2vh 0;
+      }
+      .Contact h5{
+          display: none;
+      }
+      .Contact p{
+          font-size: 16px;
+          width: 90%;
+          margin-left: 5vw;
+          line-height: 30px;
+      }
+      .form{
+          margin-top: 0;
+          width: 100%;
+          margin-left: 3vw;
+          border-radius: 0%;
+          box-shadow: none;
+      }
+      .etud input[type=checkbox]{
+          margin-left: 20vw;
+      }
+      .prof input[type=checkbox]{
+        margin-left: 14.5vw;
+      }
+      .employe input[type=checkbox]{
+        margin-left: 15vw;
+      }
+      .autre input[type=checkbox]{
+        margin-left: 10vw;
+      }
+      input[type="text"]
+        {
+            font-size:17px;
+            padding-left: 7px;
+        }
+        input[type="email"]
+        {
+            font-size:17px;
+            padding-left: 7px;
+        }
+        #submit{
+          margin-left: 0;
+          width: 90%;
+          margin-bottom: 0;
+          border-radius: 10px;
+        }
+}
