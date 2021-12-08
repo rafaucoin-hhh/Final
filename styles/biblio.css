@@ -6,9 +6,10 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 110px;
   position: relative;
-  min-height: 150vh;
+  height: fit-content;
   width: 90%;
   background-color: white;
   box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
@@ -261,11 +262,9 @@ label {
   word-spacing: 2px;
 }
 .navi {
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
   height: 13px;
   display: flex;
+  margin:  2% auto;
 }
 .navi h1 {
   font-size: 1rem;
@@ -291,15 +290,25 @@ label {
 @media (max-width:1010px) {
   .container{
     width: 100%;
-    margin-top: 4.5rem;
+    height: fit-content;
+    margin: 0;
+    margin-top: 2rem;
     border-radius: 0;
     box-shadow: none;
   }
   .search{
     width: 100%;
+    margin-top: 0;
   }
   .checks{
     width: 100%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+  }
+  .last{
+    margin-right: 5%;
   }
   #sort{
     margin: 0;
@@ -317,27 +326,35 @@ label {
   }
   .eh{
     margin: 0;
+    height: fit-content;
   }
   .first{
     width: 100%;
+    margin: 0;
+    height: fit-content;
   }
   #reserv{
     display: none;
   }
+  .list{
+    height: fit-content;
+  }
   .sep{
     margin: 0;
+    height: fit-content;
   }
   .memoire{
     justify-content: center;
     align-items: center;
   }
   .memoire h5{
+    font-size: 16px;
+    width: 100%;
     margin: 0;
   }
   .reserver{
     margin: 0;
     height: 2vh;
-    margin-left: 10%;
   }
   #okk{
     display: none;
@@ -345,13 +362,21 @@ label {
   .download{
     display: block;
     height: fit-content;
-    margin-left: 10%;
+    margin: 0;
+    margin-left: 2%;
   }
   .download img{
-    height: 2rem;
+    height: 1.4rem;
     margin-top: -50%;
   }
   .book{
     display: none;
+  }
+
+  label{
+    font-size: 16px;
+  }
+  .navi{
+    margin: 0 auto;
   }
 }

@@ -197,7 +197,7 @@ footer {
     width: 100%;
     margin-top: -6vh;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) brightness(0.85);
     overflow-y: none;
     display: flex;
     flex-direction: column;
@@ -208,6 +208,7 @@ footer {
     opacity: 0;
   }
   .nav-links a{
+    color:rgb(255, 255, 255);
     margin-bottom: 15%;
     height: 10%;
   }
@@ -261,8 +262,8 @@ footer {
     display: block;
   }
   .top img{
-    width: 5.5vw;
-    height: 6.5vh;
+    width: 7vw;
+    height: 7vh;
   }
   #close{
     margin-top: 1%;
