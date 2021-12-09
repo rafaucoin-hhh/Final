@@ -1,4 +1,7 @@
+const num = document.querySelector("#num");
 const reserve = document.querySelector(".reserv")
+num.innerText=0;
+
 //#######################################################
 const nores = document.createElement('div');
 nores.innerHTML = '<h1>Vous avez 0 réservations</h1>';
@@ -11,15 +14,25 @@ form.classList.add("form")
 //#############################################################
 const submit = document.createElement('button');
 submit.type = "submit";
+submit.setAttribute("type", "submit");
 submit.innerHTML='<h5>Compléter la réservation</h5>';
 submit.classList.add("submit");
 var i = 1
+
+
+function ne(i) {
+    num.innerHTML="<p>"+i+"</p>";
+}
+
+
+
 $(document).ready(function(){
 $('.reserver').on('click', function(s){
         if(form.children.length<=3){
+            j = form.children.length;
             event.preventDefault();
+            console.log(form.children.length)
             console.log(i);
-            console.log(form.children.length);
             if(reserve.children.length = 2 && i === 1){
                         document.querySelector(".nores").remove();
                     }
@@ -36,11 +49,14 @@ $('.reserver').on('click', function(s){
                     titre.classList.add("title");
                     newDiv.appendChild(titre);
                     const btn = document.createElement("button");
+                    btn.type = "button";
                     const img = document.createElement("img")
                     img.src = "/src/Vector1.svg";
                     btn.appendChild(img);
                     btn.classList.add("btn")
                     titre.appendChild(btn);
+                    num.innerHTML="<p>"+i+"</p>";
+                    i+=1;
                     btn.addEventListener('click', remover);
                     //################################################################
                     const sousTitre = document.createElement("div");
@@ -48,7 +64,8 @@ $('.reserver').on('click', function(s){
                     sousTitre.classList.add("soustitre")
                     newDiv.appendChild(sousTitre);
                     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                    i+=1;
+                    
+
                     if(form.children.length >= 0){
                         form.appendChild(submit);
                     }
@@ -57,14 +74,20 @@ $('.reserver').on('click', function(s){
                     
 })
 });
+
 function remover(e){
-    const item = e.target;
-    const paren = item.parentNode.parentNode.parentNode ;
-    paren.remove();
+    form.querySelector(".newdiv").remove()
+    // const item = e.target;
+    // const paren = item.parentNode.parentNode.parentNode ;
+    // paren.remove();
     i--;
+    console.log(i)
+    num.innerHTML="<p>"+(i-1)+"</p>";
     if(reserve.children.length = 2 && i === 1){
         reserve.appendChild(nores);
+        num.innerHTML="<p>"+0+"</p>";
         submit.remove();
+        reserve.classList.toggle('show');
     }
 }
 
@@ -89,3 +112,10 @@ let getSiblings = function (e) {
     return siblings;
 };
 
+
+
+$(document).ready(function(){
+    $('#panier').on('click', function(s){
+        reserve.classList.toggle('show');
+    })
+    });

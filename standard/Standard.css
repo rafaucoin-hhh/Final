@@ -159,7 +159,7 @@ footer {
   }
   body{
     overflow-x: hidden !important;
-    width: 100%;
+    width: 100vw;
   }
   .log{
     margin-top: 2vh;
@@ -191,7 +191,7 @@ footer {
   .nav-links{
     display: none;
     position: absolute;
-    z-index: 5;
+    z-index: 100;
     right: 0px;
     height: 110%;
     width: 100%;
@@ -199,10 +199,6 @@ footer {
     background-color: transparent;
     backdrop-filter: blur(10px) brightness(0.85);
     overflow-y: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     opacity: 0;
@@ -272,13 +268,21 @@ footer {
   #last{
     margin-bottom: 30%;
   }
+  .sticky{
+    position: relative;
+  }
+  .nav-active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0%);
+    transition:  0.3s ease-in;
+    position: fixed;
+    opacity: 1;
+  }
 }
-.nav-active{
-  transform: translateX(0%);
-  transition:  0.3s ease-in;
-  position: fixed;
-  opacity: 1;
-}
+
 
 /* .active{
   overflow: hidden;
